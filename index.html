@@ -3,42 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Full Page Responsive Layout</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body style="height: 100vh">
-    <!-- header -->
-    <div style="height: 10vh; background-color: blue">I'm Header</div>
+  <body>
+    <div class="container">
+      <header class="header"></header>
 
-    <!-- nav -->
-    <div style="height: 10vh; background-color: rgb(45, 167, 41)"></div>
+      <nav class="nav">
+        <ul>
+          <li>Home</li>
+          <li>Products</li>
+          <li>Contacts</li>
+        </ul>
+      </nav>
 
-    <!-- button and data -->
-    <div style="height: 60vh;" class="container">
-      <!-- up -->
-      <div
-        style="height: 50vh; background-color: gray; column-span: 2"
-        class="data"
-      ></div>
-      <!-- down -->
-      <div
-        style="
-          height: 10vh;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        "
-      >
-        <div
-          style="background-color: rgb(255, 55, 215); width: 50%; height: 100%"
-        ></div>
-        <div
-          style="background-color: orangered; width: 50%; height: 100%"
-        ></div>
-      </div>
+      <main class="content-wrapper">
+        <aside class="left-sidebar">I'm Left Sidebar</aside>
+
+        <article class="main-content"></article>
+
+        <aside class="right-sidebar">I'm Right Sidebar</aside>
+
+        <div class="footer-widgets">
+          <div class="footer-widget footer-widget-1">I'm Left Sidebar</div>
+          <div class="footer-widget footer-widget-2">I'm Right Sidebar</div>
+        </div>
+      </main>
+
+      <footer class="footer"></footer>
     </div>
-
-    <!-- footer -->
-    <div style="height: 20vh; background-color: rgb(45, 167, 41)"></div>
   </body>
 </html>
